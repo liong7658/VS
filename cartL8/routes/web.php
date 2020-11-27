@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/insertCategory', function () {
-    return view('InsertCategory');
+    return view('insertCategory');
 });
 
 Route::get('/contactus', function () {
@@ -28,4 +28,6 @@ Route::get('/contactus', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
 
